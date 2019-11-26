@@ -1,0 +1,10 @@
+@import '../../styles/_variables.scss';
+
+.product-list-container {
+	.product-list {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		padding-inline-start: 0;
+	}
+}

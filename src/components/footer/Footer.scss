@@ -1,0 +1,51 @@
+@import '../../styles/_variables.scss';
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: $darkGray;
+	padding: $paddingLarge;
+
+	@include breakpoint ('large') {
+		flex-direction: row;
+	}
+
+	.logo-footer {
+		height: 100px;
+	}
+
+	.footer-containers {
+		padding: $paddingMedium;
+
+		@include breakpoint ('large') {
+			padding: $paddingLarge;
+		}
+	}
+
+	.questions-container {
+		font-family: $fontFamily;
+	}
+
+	.questions {
+		color: $white;
+		list-style: $lightPink;
+	}
+
+	.title-footer {
+		color: $lightPink;
+		padding-left: $paddingLarge;
+	}
+
+	.transfer {
+		display: flex;
+		align-items: center;
+		color: $white;
+	}
+
+	.oxxo-image {
+		height: 30px;
+		padding: 0 $paddingMedium;
+	}
+}

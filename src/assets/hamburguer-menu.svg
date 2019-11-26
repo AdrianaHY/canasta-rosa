@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="220px" height="199px" viewBox="0 0 220 199" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Artboard Copy</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Artboard-Copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="menu-button-of-three-horizontal-lines" fill="#D83970" fill-rule="nonzero">
+            <path d="M198.709677,0 L21.2903226,0 C9.58064516,0 0,9.675 0,21.5 C0,33.325 9.58064516,43 21.2903226,43 L198.709677,43 C210.419355,43 220,33.325 220,21.5 C220,9.675 210.419355,0 198.709677,0 Z" id="Path"></path>
+            <path d="M198.709677,78 L21.2903226,78 C9.58064516,78 0,87.675 0,99.5 C0,111.325 9.58064516,121 21.2903226,121 L198.709677,121 C210.419355,121 220,111.325 220,99.5 C220,87.675 210.419355,78 198.709677,78 Z" id="Path"></path>
+            <path d="M198.709677,156 L21.2903226,156 C9.58064516,156 0,165.675 0,177.5 C0,189.325 9.58064516,199 21.2903226,199 L198.709677,199 C210.419355,199 220,189.325 220,177.5 C220,165.675 210.419355,156 198.709677,156 Z" id="Path"></path>
+        </g>
+    </g>
+</svg>

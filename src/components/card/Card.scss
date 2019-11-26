@@ -1,0 +1,22 @@
+@import '../../styles/_variables.scss';
+
+.product-card {
+	font-family: $fontFamily;
+	border: 1px solid $lightGray;
+	border-radius: 5px;
+	max-width: 300px;
+	padding: $paddingSmall;
+	margin: $paddingLarge;
+
+	.product-image {
+		max-width: 300px;
+	}
+
+	.product-name {
+		font-size: 18px;
+	}
+
+	.store-name {
+		color: $gray;
+	}
+}

@@ -1,0 +1,155 @@
+@import '../../styles/_variables.scss';
+
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	font-family: $fontFamily;
+	background: #f2f2f2;
+	padding: 10px 0 10px 15px;
+
+	.menu {
+		display: none;
+
+		@include breakpoint ('large') {
+			display: flex;
+			padding-left: $paddingLarge;
+			border: none;
+			background: transparent;
+			font-size: 16px;
+		}
+	}
+
+	.hamburger-menu {
+		display: flex;
+		padding-left: 70%;
+
+		@include breakpoint ('large') {
+			display: none;
+		}
+	}
+
+	.image-burger {
+		height: 30px;
+	}
+
+	.logo-container {
+		display: flex;
+	}
+
+	.logo-mobile{
+		display: flex;
+
+		@include breakpoint ('large') {
+			display: none;
+		}
+	}
+
+	.logo-desktop {
+		display: none;
+
+		@include breakpoint ('large') {
+			display: flex;
+		}
+	}
+
+	.chevron::before {
+		border-style: solid;
+		border-width: 0.25em 0.25em 0 0;
+		content: '';
+		display: inline-block;
+		height: 0.45em;
+		left: 0.15em;
+		position: relative;
+		top: 0.15em;
+		transform: rotate(-45deg);
+		vertical-align: top;
+		width: 0.45em;
+	}
+
+	.bottom:before {
+		top: 0;
+		transform: rotate(135deg);
+		margin-left: $paddingTiny;
+	}
+
+	.right:before {
+		left: 0;
+		transform: rotate(45deg);
+		border-width: 0.10em 0.10em 0 0;
+	}
+
+	.menu-items {
+		display: none;
+		list-style: none;
+		padding-right: $paddingLarge * 2;
+
+		@include breakpoint ('large') {
+			display: flex;
+		}
+	}
+
+	.menu-item {
+		padding: 0 $paddingSmall;
+	}
+}
+
+.container-categories {
+	.categories {
+		list-style: none;
+		font-family: 'Sarabun', sans-serif;
+		font-size: 18px;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		padding: 0 $paddingMedium;
+
+		@include breakpoint ('large') {
+			padding: $paddingMedium $paddingLarge;
+		}
+	}
+
+	.categorie {
+		width: auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		color: #37373E;
+		padding: ($paddingTiny+$paddingSmall) 0;
+
+		@include breakpoint ('large') {
+			width: 600px;
+		}
+	}
+
+	.list-of-categories {
+		display: none;
+	}
+
+	.show-list {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.chevron::before {
+		border-style: solid;
+		border-width: 0.25em 0.25em 0 0;
+		content: '';
+		display: inline-block;
+		height: 0.45em;
+		left: 0.15em;
+		position: relative;
+		top: 0.15em;
+		transform: rotate(-45deg);
+		vertical-align: top;
+		width: 0.45em;
+	}
+
+	.right:before {
+		left: 0;
+		transform: rotate(45deg);
+		border-width: 0.10em 0.10em 0 0;
+	}
+}
+
