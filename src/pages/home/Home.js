@@ -5,11 +5,12 @@ import Header from '../../components/header/Header';
 import Footer from '../../components/footer/Footer';
 import ProductList from '../productList/ProductList';
 
-import { getProducts } from '../../utils/getData';
+import ProductService from '../../utils/getData';
 
 class App extends Component {
 	constructor(props) {
 		super(props);
+		this.ProductService = new ProductService();
 		this.state = {
 			categories: [],
 			isClicked: false,
@@ -26,11 +27,12 @@ class App extends Component {
 		}));
 	}
 
-	handleProducts = async (e, slug) => {
-		e.preventDefault();
-		const products = await getProducts(slug);
-		console.log('sdjknc', products);
-		this.setState({  products: products})
+	handleProducts(slug) {
+		this.ProductService.getProducts(slug).then((response) => {
+			const products = response.results;
+			console.log("ira we, sin manos", products);
+			this.setState({products: products});	
+		});
 	}
 
 	componentWillMount() {
@@ -64,7 +66,7 @@ class App extends Component {
 							<ul className="categories">
 								{categories.map(( category ) =>
 									<li className="category" key={category.name}>
-										<Link onClick={(e) => this.handleProducts(e, category.slug)} to={`/${category.slug}`}>{category.name} <span className="chevron right" /></Link>
+										<Link onClick={(e) => this.handleProducts(category.slug)} to={`/${category.slug}`}>{category.name} <span className="chevron right" /></Link>
 									</li>
 								)}
 							</ul>
