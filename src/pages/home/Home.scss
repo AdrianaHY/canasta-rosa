@@ -1,0 +1,30 @@
+@import '../../styles/_variables.scss';
+
+.home-container {
+	.home {
+		background-image:url("../../assets/home_mobile.png");
+		height: 100vh;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+
+		@include breakpoint ('large') {
+			background-image:url("../../assets/home-desktop.png");
+			height: 50vh;
+		}
+	}
+
+	.image-container {
+		display: flex;
+		justify-content: center;
+		padding: $paddingLarge;
+	}
+
+	.banner {
+		width: 100%;
+
+		@include breakpoint('large') {
+			width: 50%;
+		}
+	}
+}

@@ -1,0 +1,20 @@
+@import '../../styles/_variables.scss';
+
+.categories {
+	display: none;
+	flex-direction: column;
+	width: 100%;
+	padding: 0 $paddingMedium;
+
+	@include breakpoint ('large') {
+		padding: $paddingMedium $paddingLarge;
+	}
+
+	.show-list {
+		display: flex;
+		justify-content: space-between;
+
+
+	}
+}
+

@@ -1,10 +1,106 @@
 @import '../../styles/_variables.scss';
 
 .product-list-container {
-	.product-list {
+	.lds-heart {
 		display: flex;
+		position: relative;
+		justify-content: center;
+		align-items: center;
+		width: 100vw;
+		height: 100vh;
+		transform-origin: 40px 40px;
+		background-color: $lightPink;
+
+		.lds-heart-container {
+			position: relative;
+			width: 80px;
+			height: 80px;
+			transform: rotate(45deg);
+			transform-origin: 40px 40px;
+
+			div {
+				top: 32px;
+				left: 32px;
+				position: absolute;
+				width: 32px;
+				height: 32px;
+				background: $white;
+				animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+
+				&::after,
+				&::before {
+					content: " ";
+					position: absolute;
+					display: block;
+					width: 32px;
+					height: 32px;
+					background: $white;
+				}
+
+				&:before {
+					left: -24px;
+					border-radius: 50% 0 0 50%;
+				}
+
+				&:after {
+					top: -24px;
+					border-radius: 50% 50% 0 0;
+				}
+			}
+		}
+
+		@keyframes lds-heart {
+			0% {
+			  transform: scale(0.95);
+			}
+			5% {
+			  transform: scale(1.1);
+			}
+			39% {
+			  transform: scale(0.85);
+			}
+			45% {
+			  transform: scale(1);
+			}
+			60% {
+			  transform: scale(0.95);
+			}
+			100% {
+			  transform: scale(0.9);
+			}
+		}
+
+	}
+
+	.image-container {
+		display: flex;
+		justify-content: center;
+		padding: $paddingLarge;
+	}
+
+	.banner {
+		width: 100%;
+
+		@include breakpoint('large') {
+			width: 50%;
+		}
+	}
+
+	.product-list {
+		padding-top: 0;
+		display: flex;
+		justify-content: center;
 		flex-direction: row;
 		flex-wrap: wrap;
+		width: 100vw;
+		margin-block-start: 0;
+		margin-block-end: 0;
+		margin-inline-start: auto;
 		padding-inline-start: 0;
+
+		@include breakpoint ('large') {
+			padding: 0;
+			padding-top: $paddingLarge;
+		}
 	}
 }
