@@ -20,10 +20,15 @@ You will also see any lint errors in the console.
 
 
 ![alt text](https://raw.githubusercontent.com/AdrianaHY/canasta-rosa/master/src/assets/mobile-1.png)
-![alt text](https://raw.githubusercontent.com/AdrianaHY/canasta-rosa/master/src/assets/mobile-2.png)
+
 ![alt text](https://raw.githubusercontent.com/AdrianaHY/canasta-rosa/master/src/assets/desktop-1.png)
-![alt text](https://raw.githubusercontent.com/AdrianaHY/canasta-rosa/master/src/assets/gif_desktop.png)
-![alt text](https://raw.githubusercontent.com/AdrianaHY/canasta-rosa/master/src/assets/gif_mobile.png)
+
+![alt text](https://raw.githubusercontent.com/AdrianaHY/canasta-rosa/master/src/assets/desktop-2.png)
+
+
+![alt text](https://raw.githubusercontent.com/AdrianaHY/canasta-rosa/master/src/assets/gif_desktop.gif)
+
+![alt text](https://raw.githubusercontent.com/AdrianaHY/canasta-rosa/master/src/assets/gif_mobile.gif)
 
 
 
